@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes opaco {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    align-items: center;
+    animation: opaco .8s ease;
+}
+
+main h2 {
+    font-size: clamp(24px, 6vw, 40px);
+    text-align: center;
+}
+
+.materia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.temario {
+    flex-shrink: 0;
+}
+
+.informacion {
+    box-shadow: 0px 0px 20px #797979;
+    flex: 1;
+    min-width: 0;
+    max-width: 100rem;
+    height: 65vh;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.informacion section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.informacion section h3 {
+    width: 95%;
+    font-size: clamp(18px, 5vw, 30px);
+    border-bottom: 1px solid #797979;
+    color: #751FFF;
+}
+
+.informacion section p {
+    width: 95%;
+    font-size: clamp(15px, 3.5vw, 20px);
+}
+
+.informacion section h4 {
+    width: 95%;
+    font-size: clamp(16px, 4vw, 25px);
+}
+
+.informacion section ul {
+    width: 95%;
+    font-size: clamp(15px, 3.5vw, 25px);
+}
+
+@media (max-width: 1100px) {
+    .materia {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 10px;
+    }
+
+    .informacion {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .informacion {
+        height: 60vh;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+}
+
+/*Laptops (ej. 1536 x 864)*/
+@media (min-width: 1200px) and (max-width: 1600px) and (max-height: 900px) {
+    .materia {
+        gap: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .informacion {
+        height: 68vh;
+    }
+
+    .informacion section img {
+        max-width: 600px;
+    }
+}

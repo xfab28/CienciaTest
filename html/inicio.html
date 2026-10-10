@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/enlaces.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/cerrar-sesion.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <img src="../img/logo.jpeg" alt="logo">
+        <h1>CienciaTest</h1>
+        <div class="cuenta">
+            <img src="../img/account.png" alt="cuenta">
+        </div>
+    </header>
+
+    <!--Enlaces-->
+    <div class="enlaces">
+        <a href="fisica.html">Física</a>
+        <a href="quimica.html">Química</a>
+        <a href="biologia.html">Biología</a>
+    </div>
+
+    <!--Contenido-->
+    <!--Sidebar-->
+    <div class="contenido">
+        <aside class="sidebar">
+            <a href="inicio.html"><img src="../img/home.png" alt="casa"></a>
+            <div class="excepcion">
+                <img src="../img/setting.png" alt="tuerca">
+                <img src="../img/log-out.png" alt="salida" class="log-out">
+            </div>
+        </aside>
+
+        <!--Informacion-->
+        <main>
+            <h2>¡Bienvenido de vuelta, <span class="usuario">usuario</span>!</h2>
+
+            <div class="materias">
+                <h3>Materias</h3>
+
+                <div class="ciencias">
+                    <div class="fisica materia">
+                        <h4>Física</h4>
+                        <img src="../img/atomic.png" alt="fisica">
+                        <input type="button" name="btn1" class="btn-fisica btn-continuar" value="Comenzar">
+                    </div>
+                    <div class="quimica materia">
+                        <h4>Química</h4>
+                        <img src="../img/flask.png" alt="frasco">
+                        <input type="button" name="btn1" class="btn-quimica btn-continuar" value="Comenzar">
+                    </div>
+                    <div class="biologia materia">
+                        <h4>Biología</h4>
+                        <img src="../img/dna-structure.png" alt="adn">
+                        <input type="button" name="btn1" class="btn-biologia btn-continuar" value="Comenzar">
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <footer>
+                <p>© 2026 CienciaTest. All rights reserved</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <div class="fondo-gris esconder">
+        <div class="cerrar-sesion">
+            <h3>¿Desea cerrar sesión?</h3>
+            <div class="btns-sesion">
+                <input type="button" name="aceptar" class="aceptar" value="Aceptar">
+                <input type="button" name="rechazar" class="cancelar" value="Cancelar">
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/cerrar-sesion.js"></script>
+    <script src="../js/inicio.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</body>
+</html>

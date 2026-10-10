@@ -1,0 +1,27 @@
+@keyframes rodando {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    width: clamp(110px, 35vw, 150px);
+    height: clamp(110px, 35vw, 150px);
+    background-color: white;
+    border-radius: 100%;
+    border: clamp(14px, 4vw, 20px) #EBEBEB solid;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: clamp(14px, 4vw, 20px) solid #751FFF;
+    animation-name: rodando;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

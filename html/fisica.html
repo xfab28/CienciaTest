@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/fisica.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/enlaces.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/cerrar-sesion.css">
+    <link rel="stylesheet" href="../css/temario.css">
+    <link rel="stylesheet" href="../css/cuadro-materia.css">
+    <title>Física</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <img src="../img/logo.jpeg" alt="logo">
+        <h1>CienciaTest</h1>
+        <div class="cuenta">
+            <img src="../img/account.png" alt="cuenta">
+        </div>
+    </header>
+
+    <!--Enlaces-->
+    <div class="enlaces">
+        <a href="fisica.html">Física</a>
+        <a href="quimica.html">Química</a>
+        <a href="biologia.html">Biología</a>
+    </div>
+
+    <!--Contenido-->
+    <!--Sidebar-->
+    <div class="contenido">
+        <aside class="sidebar">
+            <a href="inicio.html"><img src="../img/home.png" alt="casa"></a>
+            <div class="excepcion">
+                <img src="../img/setting.png" alt="tuerca">
+                <img src="../img/log-out.png" alt="salida" class="log-out">
+            </div>
+        </aside>
+
+        <!--Informacion-->
+        <main>
+            <h2>Física</h2>
+
+            <div class="materia">
+                <div class="temario">
+                    <h3>Temas</h3>
+                    <ol>
+                        <li class="MF"><a href="#tem1">Magnitudes fisicas</a></li>
+                        <li class="MC"><a href="#tem2">Movimiento de los cuerpos</a></li>
+                        <li class="LN"><a href="#tem3">Leyes de Newton</a></li>
+                        <li class="GU"><a href="#tem4">Gravitación Universal</a></li>
+                        <li class="TEP"><a href="#tem5">Trabajo, energía y potencia</a></li>
+                        <li class="H"><a href="#tem6">Hidrostática</a></li>
+                        <li class="EC"><a href="#tem7">Electricidad</a></li>
+                        <li class="EM"><a href="#tem8">Electromagnetismo</a></li>
+                        <li class="O"><a href="#tem9">Ondas</a></li>
+                        <li class="EI"><a href="#tem10">Efecto invernadero</a></li>
+                        <li class="TR"><a href="#tem11">Teoría de la relatividad</a></li>
+                    </ol>
+                    <img src="../img/atomic.png" alt="atomo">
+                </div>
+
+                <div class="informacion">
+                    <section id="tem1">
+                        <h3>Magnitudes físicas</h3>
+                        <p>Una <b>magnitud física</b> es una propiedad que puede medirse y expresarse mediante un número y una unidad.</p>
+
+                        <h4>Tipos</h4>
+                        <p><strong>Magnitudes fundamentales:</strong> no dependen de otras magnitudes.</p>
+
+                        <table>
+                            <tr>
+                                <th><b>Magnitud</b></th>
+                                <th><b>Unidad SL</b></th>
+                                <th><b>Símbolo</b></th>
+                            </tr>
+
+                            <tr>
+                                <th>Longitud</th>
+                                <th>metro</th>
+                                <th>m</th>
+                            </tr>
+
+                            <tr>
+                                <th>Masa</th>
+                                <th>Kilogramo</th>
+                                <th>kg</th>
+                            </tr>
+
+                            <tr>
+                                <th>Tiempo</th>
+                                <th>segundo</th>
+                                <th>s</th>
+                            </tr>
+
+                            <tr>
+                                <th>Temperatura</th>
+                                <th>Kelvin</th>
+                                <th>K</th>
+                            </tr>
+
+                            <tr>
+                                <th>Corriente eléctrica</th>
+                                <th>ampere</th>
+                                <th>A</th>
+                            </tr>
+
+                            <tr>
+                                <th>Cantidad de sustancia</th>
+                                <th>mol</th>
+                                <th>mol</th>
+                            </tr>
+
+                            <tr>
+                                <th>Intensidad luminosa</th>
+                                <th>candela</th>
+                                <th>cd</th>
+                            </tr>
+                        </table>
+
+                        <p><strong>Magnitudes derivadas:</strong> se obtienen combinando magnitudes fundamentales.</p>
+                        <p>Ejemplos:</p>
+
+                        <ul>
+                            <li>Velocidad -> m/s</li>
+                            <li>Aceleracion -> m/s 2</li>
+                            <li>Fuerza -> newton (N)</li>
+                            <li>Energía -> joule (J)</li>
+                            <li>Potencia -> watt (W)</li>
+                            <li>Presión -> pascal (Pa)</li>
+                        </ul>
+
+                        <h4>Escalares y vectoriales</h4>
+
+                        <p><strong>Escalar:</strong> solamente tiene magnitud.</p>
+                        <p>Masa = 5 kg</p>
+
+                        <img src="../materia-img/fisica/escalares.png" alt="img1">
+
+                        <p><strong>Vectorial:</strong> tiene magnitud, dirección y sentido.</p>
+                        <p>Velocidad = 20 m/s hacia el norte.</p>
+
+                        <img src="../materia-img/fisica/vectoriales.png" alt="img2">
+                    </section>
+
+                    <section id="tem2">
+                        <h3>Movimiento de los cuerpos</h3>
+                        <p>La <b>cinemática</b> estudia el movimiento sin preocuparse por las causas que lo producen.</p>
+
+                        <h4>Conceptos importantes</h4>
+                        <p><strong>Posición:</strong> lugar donde se encuentra un objeto.</p>
+                        <p><strong>Distancia:</strong> longitud total recorrida.</p>
+                        <p><strong>Desplazamiento:</strong> cambio de posición entre el punto inicial y final.</p>
+                        <p><strong>Velocidad:</strong></p>
+                        <p>v = Δt / Δx​</p>
+                        <p>donde:</p>
+
+                        <ul>
+                            <li>v = velocidad</li>
+                            <li>Δx = desplazamiento</li>
+                            <li>Δt = tiempo</li>
+                        </ul>
+
+                        <img src="../materia-img/fisica/formulas.jpg" alt="img3">
+
+                        <p><strong>Aceleración:</strong></p>
+                        <p>a = Δv / Δt</p>
+                        <p>Indica qué tan rápido cambia la velocidad.</p>
+
+                        <h4>Movimiento rectilíneo uniforme (MRU)</h4>
+                        <p>La velocidad permanece constante.</p>
+                        <p>x = x0 + vt</p>
+                        <p>Ejemplo: un automóvil que avanza constantemente a 20 m/s.</p>
+
+                        <img src="../materia-img/fisica/movimiento-rectilíneo-uniforme-fórmulas-01.jpg" alt="img4">
+
+                        <h4>Movimiento rectilíneo uniformemente acelerado (MRUA)</h4>
+                        <p>Existe una aceleración constante.</p>
+                        <p>v = v0 + at</p>
+                        <p>x = x0 + v0t + (1/2)at2</p>
+
+                        <img src="../materia-img/fisica/mrua_mov_rectilineo_uniformemente_acelerado.png" alt="img5">
+
+                        <h4>Caída libre</h4>
+                        <p>Es el movimiento producido únicamente por la gravedad.</p>
+                        <p>En la tierra:</p>
+                        <p>g = 9.8 m/s2</p>
+                        <p>Un objeto en caída libre aumenta su velocidad aproximadamente <strong>9.8 m/s cada segundo.</strong></p>
+
+                        <img src="../materia-img/fisica/caida-libre.jpg" alt="img6">
+                    </section>
+
+                    <section id="tem3">
+                        <h3>Leyes de Newton</h3>
+                        <p>Las leyes de Newton explican cómo las <b>fuerzas</b> producen cambios en el movimiento.</p>
+
+                        <h4>Primera ley - Ley de la inercia</h4>
+                        <p>Un cuerpo permanece en reposo o en movimiento rectilíneo uniforme si la fuerza neta sobre él es cero.</p>
+                        <p>Σ F = 0</p>
+                        <p>Ejemplo: un libro sobre una mesa permanece quieto porque las fuerzas están equilibradas.</p>
+
+                        <img src="../materia-img/fisica/primera ley.jpg" alt="img7">
+
+                        <h4>Segunda ley</h4>
+                        <p>La aceleración de un objeto depende de la fuerza neta y de su masa.</p>
+                        <p>F = ma</p>
+                        <p>Donde:</p>
+
+                        <ul>
+                            <li>F = fuerza en newtons</li>
+                            <li>m = masa en kg</li>
+                            <li>a = aceleración en m/s2</li>
+                        </ul>
+
+                        <p>Ejemplo:</p>
+                        <p>a = 20 / 5 = 4 m/s2</p>
+
+                        <img src="../materia-img/fisica/segunda ley.avif" alt="img8">
+
+                        <h4>Tercera ley - Acción y reacción</h4>
+                        <p>A toda fuerza ejercida sobre un objeto corresponde otra fuerza de igual magnitud y dirección opuesta ejercida por el objeto.</p>
+                        <p>Ejemplo: cuando saltas, tus piernas empujan el suelo y el suelo ejerce una fuerza hacia arriba sobre ti.</p>
+
+                        <h4>Algunas fuerzas</h4>
+                        
+                        <ul>
+                            <li>Peso</li>
+                            <li>Normal</li>
+                            <li>Fricción o rozamiento</li>
+                            <li>Tensión</li>
+                            <li>Fuerza elástica</li>
+                            <li>Fuerza aplicada</li>
+                        </ul>
+
+                        <img src="../materia-img/fisica/tercera ley.jpg" alt="img9">
+                    </section>
+
+                    <section id="tem4">
+                        <h3>Gravitación universal</h3>
+                        <p>Newton propuso que <strong>todos los cuerpos con masa se atraen entre sí.</strong></p>
+                        <p>La fuerza gravitatoria es:</p>
+                        <p>F = G(m1m2/r2)</p>
+                        <p>Donde:</p>
+
+                        <ul>
+                            <li>F = fuerza gravitatoria</li>
+                            <li>G = constante gravitacional</li>
+                            <li>m1, m2 = masas</li>
+                            <li>r = distancia entre sus centros</li>
+                        </ul>
+
+                        <p>G = 6.674 x 10−11 (el -11 es exponente) N m2 / kg2</p>
+
+                        <img src="../materia-img/fisica/fuerza gravitacional.jpg" alt="img10">
+
+                        <h4>¿De qué depende?</h4>
+                        <p>La fuerza aumenta cuando:</p>
+
+                        <ul>
+                            <li>aumentan las masas;</li>
+                            <li>disminuye la distancia.</li>
+                        </ul>
+
+                        <p>Y disminuye cuando aumenta la distancia.</p>
+
+                        <h4>Gravedad terrestre</h4>
+                        <p>El peso de un objeto se calcula:</p>
+                        <p>P = mg</p>
+                        <p><strong>Masa ≠ peso</strong></p>
+
+                        <ul>
+                            <li>Masa -> cantidad de materia -> kg.</li>
+                            <li>Peso -> fuerza gravitatoria -> N.</li>
+                        </ul>
+
+                        <img src="../materia-img/fisica/gravedad terrestre.jpg" alt="img11">
+
+                        <p>Por ejemplo, una persona puede tener la misma masa en la Tierra y la Luna, pero su peso será diferente porque la gravedad es diferente.</p>
+                    </section>
+
+                    <section id="tem5">
+                        <h3>Trabajo, energía y potencia</h3>
+                        <h4>Trabajo</h4>
+                        <p>En física, existe trabajo cuando una fuerza produce un desplazamiento.</p>
+                        <p>Si la fuerza y el desplazamiento tienen la misma dirección:</p>
+                        <p>W = Fd</p>
+                        <p>Unidad:</p>
+                        <p>J = N x m</p>
+                        <h4>Ejemplo:</h4>
+                        <p>Si empujas una caja con 50N durante 4 m:</p>
+                        <p>W = 50(4) = 200J</p>
+
+                        <img src="../materia-img/fisica/trabajo.png" alt="img12">
+
+                        <h4>Energía</h4>
+                        <p>La energía es la capacidad de producir cambios o realizar trabajo.</p>
+
+                        <img src="../materia-img/fisica/energia.jpg" alt="img13">
+
+                        <h4>Energía cinética</h4>
+                        <p>Es la energía asociada al movimiento.</p>
+                        <p>Ec = (1/2)mv2</p>
+
+                        <h4>Energía potencial gravitatoria</h4>
+                        <p>Depende de la altura:</p>
+                        <p>Ep = mgh</p>
+
+                        <img src="../materia-img/fisica/energias.jpg" alt="img14">
+
+                        <h4>Energía mecánica</h4>
+                        <p>Em = Ec + Ep</p>
+                        <p>En condiciones ideales, la energía mecánica se conserva.</p>
+
+                        <img src="../materia-img/fisica/energia-mecanica-ejemplo-cke.webp" alt="img15">
+
+                        <h4>Potencia</h4>
+                        <p>Indica qué tan rápido se realiza un trabajo.</p>
+                        <p>P = W / t</p>
+                        <p>Unidad:</p>
+                        <p>Watt = J / s</p>
+                        <p>Una máquina más potente puede realizar el mismo trabajo en menos tiempo.</p>
+
+                        <img src="../materia-img/fisica/potencia-en-fisica-formula-cke.webp" alt="img16">
+                    </section>
+
+                    <section id="tem6">
+                        <h3>Hidrostática</h3>
+                        <p>La <b>hidrostática</b> estudia los líquidos en reposo.</p>
+
+                        <h4>Densidad</h4>
+                        <p>Relaciona la masa con el volumen:</p>
+                        <p>p = m / V</p>
+                        <p>Unidad:</p>
+                        <p>kg/m3</p>
+
+                        <img src="../materia-img/fisica/densidad.jpg" alt="img17">
+
+                        <h4>Presión</h4>
+                        <p>Es la fuerza ejercida sobre una superficie:</p>
+                        <p>P = F / A</p>
+                        <p>Unidad:</p>
+                        <p>Pa = N/m2</p>
+
+                        <img src="../materia-img/fisica/presion fisica.jpg" alt="img18">
+
+                        <h4>Presión en un líquido</h4>
+                        <p>La presión aumenta con la profundidad:</p>
+                        <p>P = pgh</p>
+                        <p>Si se considera además la presión atmosférica:</p>
+                        <p>Ptotal = Patm + pgh</p>
+                        <p>Por eso la presión del agua es mayor cuanto más profundo estás.</p>
+
+                        <img src="../materia-img/fisica/presion.jpg" alt="img19">
+
+                        <h4>Principio de Pascal</h4>
+                        <p>Una presión aplicada a un fluido confinado se transmite en todas direcciones.</p>
+                        <p>Se utiliza, por ejemplo, en:</p>
+
+                        <ul>
+                            <li>frenos hidráulicos</li>
+                            <li>elevadores hidráulicos</li>
+                            <li>prensas hidráulicas</li>
+                        </ul>
+
+                        <img src="../materia-img/fisica/principio de pascal.webp" alt="img20">
+
+                        <h4>Principio de Arquímedes</h4>
+                        <p>Un objeto sumergido en un fluido recibe una fuerza hacia arriba llamada <strong>empuje.</strong></p>
+                        <p>E = pfgV</p>
+                        <p>Esto explica por qué algunos objetos flotan.</p>
+
+                        <img src="../materia-img/fisica/arquimedes.webp" alt="img21">
+                    </section>
+
+                    <section id="tem7">
+                        <h3>Electricidad</h3>
+                        <p>La electricidad está relacionada con las <b>cargas eléctricas</b> y su movimiento.</p>
+                        <p>Existen dos tipos de carga:</p>
+
+                        <ul>
+                            <li>positiva (+)</li>
+                            <li>negativa (-)</li>
+                        </ul>
+
+                        <p>Cargas iguales se repelen y cargas diferentes se atraen.</p>
+
+                        <h4>Corriente eléctrica</h4>
+                        <p>Es el flujo de carga eléctrica.</p>
+                        <p>I = Q / t</p>
+                        <p>Unidad: <b>ampere (A).</b></p>
+
+                        <img src="../materia-img/fisica/Corriente-electrica.jpg" alt="img22">
+
+                        <h4>Voltaje</h4>
+                        <p>Es la diferencia de potencial eléctrico entre dos puntos.</p>
+                        <p>Se mide en <b>voltios (V).</b></p>
+
+                        <img src="../materia-img/fisica/Voltaje.jpg" alt="img23">
+
+                        <h4>Resistencia</h4>
+                        <p>Es la oposición al paso de la corriente.</p>
+                        <p>Se mide en <b>ohmios (Ω).</b></p>
+
+                        <img src="../materia-img/fisica/resistencia.png" alt="img24">
+
+                        <h4>Ley de Ohm</h4>
+                        <p>V = IR</p>
+                        <p>Por lo tanto:</p>
+                        <p>I = V / R</p>
+                        <p>R = V / I</p>
+
+                        <img src="../materia-img/fisica/Ley-Ohm.jpg" alt="img25">
+
+                        <h4>Potencia eléctrica</h4>
+                        <p>P = V I</p>
+                        <p>También:</p>
+                        <p>P = I2 R</p>
+                        <p>o</p>
+                        <p>P = V2 / R</p>
+
+                        <img src="../materia-img/fisica/Potencia-electrica.jpg" alt="img26">
+
+                        <h4>Circuitos</h4>
+                        <p><b>Serie:</b> los componentes están conectados uno después de otro.</p>
+                        <p><b>Paralelo:</b> existen diferentes caminos para la corriente.</p>
+
+                        <img src="../materia-img/fisica/circuitos.webp" alt="img27">
+                    </section>
+
+                    <section id="tem8">
+                        <h3>Electromagnetismo</h3>
+                        <p>El electromagnetismo estudia la relación entre <b>electricidad y magnetismo.</b></p>
+                        <p>Una corriente eléctrica puede producir un <b>campo magnético.</b></p>
+                        <p>Por ejemplo, cuando circula corriente por una bobina, puede producirse un campo magnético considerable.</p>
+
+                        <h4>Campo magnético</h4>
+                        <p>Es la región donde actúan fuerzas magnéticas.</p>
+                        <p>Se representa mediante líneas de campo.</p>
+
+                        <img src="../materia-img/fisica/campo-magnetico.webp" alt="img28">
+
+                        <h4>Electromagnetismo</h4>
+                        <p>Una de las ideas fundamentales es:</p>
+                        <p>Las cargas eléctricas en movimiento producen campos magnéticos.</p>
+                        <p>Y también ocurre lo contrario:</p>
+                        <p>Un campo magnético variable puede producir una corriente eléctrica.</p>
+                        <p>Este segundo fenómeno se conoce como <strong>inducción electromagnética.</strong></p>
+
+                        <img src="../materia-img/fisica/electromagnetismo-og.webp" alt="img29">
+
+                        <h4>Aplicaciones</h4>
+                        <p>El electromagnetismo permite construir:</p>
+
+                        <ul>
+                            <li>motores eléctricos;</li>
+                            <li>generadores;</li>
+                            <li>transformadores;</li>
+                            <li>altavoces;</li>
+                            <li>electroimanes;</li>
+                            <li>muchos dispositivos electrónicos.</li>
+                        </ul>
+
+                        <h4>Motor eléctrico</h4>
+                        <p>Transforma:</p>
+                        <p>energía eléctrica -> energía mecánica</p>
+
+                        <h4>Generador</h4>
+                        <p>Hace lo contrario:</p>
+                        <p>energía mecánica -> energía eléctrica</p>
+                    </section>
+
+                    <section id="tem9">
+                        <h3>Ondas</h3>
+                        <p>Una <b>onda</b> es una perturbación que se propaga transportando energía.</p>
+                        <p>Ejemplos:</p>
+
+                        <ul>
+                            <li>sonido;</li>
+                            <li>ondas del agua;</li>
+                            <li>luz;</li>
+                            <li>ondas sísmicas.</li>
+                        </ul>
+
+                        <img src="../materia-img/fisica/onda.jpg" alt="img30">
+
+                        <h4>Elementos de una onda</h4>
+                        <p><b>Longitud de onda (λ):</b> distancia entre dos puntos equivalentes consecutivos.</p>
+                        <p><b>Frecuencia (f):</b> número de ciclos por segundo.</p>
+                        <p>Se mide en hertz:</p>
+                        <p>Hz = 1 / s</p>
+                        <p><b>Período (T):</b> tiempo que tarda en realizarse un ciclo.</p>
+                        <p>T = 1 / f</p>
+                        <p><b>Amplitud:</b> máximo desplazamiento respecto al equilibrio.</p>
+
+                        <h4>Velocidad de una onda</h4>
+                        <p>v = λf</p>
+
+                        <img src="../materia-img/fisica/onda formula.jpg" alt="img31">
+
+                        <h4>Ondas mecánicas</h4>
+                        <p>Necesitan un medio material para propagarse.</p>
+                        <p>Ejemplo:</p>
+                        <p>sonido.</p>
+
+                        <img src="../materia-img/fisica/ondas mecanicas.png" alt="img32">
+
+                        <h4>Ondas electromagnéticas</h4>
+                        <p>No necesitan un medio material.</p>
+                        <p>Ejemplo:</p>
+                        <p>luz.</p>
+                        <p>Por eso la luz puede viajar por el vacío.</p>
+
+                        <img src="../materia-img/fisica/onda-electromagnetica-og.webp" alt="img33">
+
+                        <h4>Fenómenos ondulatorios</h4>
+
+                        <ul>
+                            <li>Reflexión</li>
+                            <li>Refracción</li>
+                            <li>Difracción</li>
+                            <li>Interferencia</li>
+                        </ul>
+                    </section>
+
+                    <section id="tem10">
+                        <h3>Efecto invernadero</h3>
+                        <p>El <b>efecto invernadero</b> es un fenómeno natural que permite que la Tierra mantenga una temperatura adecuada para la vida.</p>
+                        <p>La Tierra recibe energía del Sol. Parte de esa energía es absorbida por la superficie terrestre y posteriormente se emite como radiación infrarroja.</p>
+                        <p>Algunos gases atmosféricos absorben parte de esa radiación y vuelven a emitirla.</p>
+
+                        <h4>Gases de efecto invernadero</h4>
+                        <p>Entre ellos:</p>
+
+                        <ul>
+                            <li>dióxido de carbono (CO2)</li>
+                            <li>metano (CH4);</li>
+                            <li>vapor de agua;</li>
+                            <li>óxido nitroso (N2O)</li>
+                        </ul>
+
+                        <img src="../materia-img/fisica/gases.jpg" alt="img34">
+
+                        <h4>Efecto invernadero natural</h4>
+                        <p>Es <b>necesario</b> para mantener la temperatura de la Tierra.</p>
+
+                        <h4>Problema actual</h4>
+                        <p>Las actividades humanas han aumentado las concentraciones de varios gases de efecto invernadero, especialmente CO₂ y metano.</p>
+                        <p>Esto intensifica el efecto invernadero y contribuye al <b>calentamiento global.</b></p>
+                        <p>Entre las fuentes importantes están:</p>
+
+                        <ul>
+                            <li>quema de combustibles fósiles;</li>
+                            <li>deforestación;</li>
+                            <li>agricultura y ganadería;</li>
+                            <li>procesos industriales.</li>
+                        </ul>
+                    </section>
+
+                    <section id="tem11">
+                        <h3>Teoría de la relatividad</h3>
+                        <p>La teoría de la relatividad fue desarrollada principalmente por <b>Albert Einstein.</b></p>
+                        <p>Se divide en:</p>
+                        <ol>
+                            <li>Relatividad especial.</li>
+                            <li>Relatividad general.</li>
+                        </ol>
+
+                        <h4>Relatividad especial</h4>
+                        <p>Fue publicada en 1905.</p>
+                        <p>Se basa en dos ideas principales:</p>
+                        
+                        <ol>
+                            <li><b>Las leyes de la física son las mismas para todos los observadores que se mueven a velocidad constante unos respecto a otros.</b></li>
+                            <li><b>La velocidad de la luz en el vacío es constante</b></li>
+                        </ol>
+
+                        <p>c = 3.0 x 10 8(8 es exponente) m/s</p>
+                        <p>Independientemente del movimiento de la fuente o del observador.</p>
+
+                        <h4>Equivalencia masa-energía</h4>
+                        <p>Una de las ecuaciones más famosas es:</p>
+                        <p>E = mc2</p>
+                        <img src="../materia-img/fisica/equivalencia.webp" alt="img35">
+                        <p>Significa que la masa puede considerarse una forma de energía y que una pequeña cantidad de masa corresponde a una cantidad enorme de energía.</p>
+
+                        <h4>Dilatación temporal</h4>
+                        <p>Según la relatividad especial, el tiempo puede transcurrir a diferentes ritmos para observadores que se mueven a velocidades muy altas respecto unos de otros.</p>
+                        <p>A velocidades cercanas a la de la luz, estos efectos se vuelven importantes.</p>
+
+                        <img src="../materia-img/fisica/dilatacion.webp" alt="img36">
+
+                        <h4>Relatividad general</h4>
+                        <p>Publicada en 1915.</p>
+                        <p>Describe la gravedad de una manera diferente a Newton.</p>
+                        <p>Einstein propuso que la <b>masa y la energía deforman el espacio-tiempo.</b></p>
+                        <p>Los objetos se mueven siguiendo esa geometría.</p>
+                        <p>Una forma sencilla de imaginarlo es pensar en una tela que se deforma cuando colocas una bola pesada sobre ella. Es solamente una analogía: el espacio-tiempo real tiene más dimensiones y no es literalmente una tela.</p>
+                        <p>La relatividad general predice fenómenos como:</p>
+
+                        <ul>
+                            <li>agujeros negros;</li>
+                            <li>ondas gravitacionales;</li>
+                            <li>desviación de la luz por la gravedad;</li>
+                            <li>dilatación gravitacional del tiempo.</li>
+                        </ul>
+
+                        <img src="../materia-img/fisica/relatividad.png" alt="img37">
+                    </section>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <footer>
+                <p>© 2026 CienciaTest. All rights reserved</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <div class="fondo-gris esconder">
+        <div class="cerrar-sesion">
+            <h3>¿Desea cerrar sesión?</h3>
+            <div class="btns-sesion">
+                <input type="button" name="aceptar" class="aceptar" value="Aceptar">
+                <input type="button" name="rechazar" class="cancelar" value="Cancelar">
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/cerrar-sesion.js"></script>
+    <script src="../js/fisica.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</body>
+</html>

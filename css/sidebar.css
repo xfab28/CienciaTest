@@ -1,0 +1,54 @@
+/*Contenido*/
+.contenido {
+    display: flex;
+    flex: 1;
+    min-height: 85vh;
+    width: 100%;
+    max-width: 100%;
+}
+
+/*Animaciones*/
+@keyframes izquierda {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: matrix(0);
+    }
+}
+
+/*Sidebar*/
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ADADAD;
+    width: 65px;
+    flex-shrink: 0;
+    align-self: stretch;
+    animation: izquierda .8s ease;
+}
+
+.sidebar img {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.excepcion {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 50px;
+    }
+
+    .sidebar img {
+        width: 32px;
+        height: 32px;
+        margin: 6px;
+    }
+}
