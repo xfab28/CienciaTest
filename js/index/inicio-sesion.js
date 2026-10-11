@@ -24,6 +24,8 @@ function mensaje(clase, aviso) {
     aviso_inicio.textContent = aviso;
 }
 
+console.log("URL actual:", window.location.href);
+console.log("Destino calculado:", new URL("../html/carga.html", window.location.href).href);
 //Evento
 btn_inicio.addEventListener("click", async () => {
     const usuarios = await obtenerUsuarios();
