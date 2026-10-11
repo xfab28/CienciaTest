@@ -35,7 +35,7 @@ btn_inicio.addEventListener("click", async () => {
             mensaje("inicio-aprobado", "Inicio de sesión realizado éxitosamente");
 
             setTimeout(() => {
-                window.location.href = "html/carga.html"
+                window.location.href = "CienciaTest/html/carga.html"
             }, 2000);
 
             break;
