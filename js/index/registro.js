@@ -46,7 +46,7 @@ btn_registro.addEventListener("click", async () => {
         mensaje("registro-aprobado", "Registro realizado con éxito");
 
         setTimeout(() => {
-            window.location.href = "CienciaTest/html/carga.html";
+            window.location.href = "html/carga.html";
         }, 2000);
     }
 });

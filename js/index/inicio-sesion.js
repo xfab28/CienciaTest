@@ -24,8 +24,6 @@ function mensaje(clase, aviso) {
     aviso_inicio.textContent = aviso;
 }
 
-console.log("URL actual:", window.location.href);
-console.log("Destino calculado:", new URL("../html/carga.html", window.location.href).href);
 //Evento
 btn_inicio.addEventListener("click", async () => {
     const usuarios = await obtenerUsuarios();
@@ -35,7 +33,7 @@ btn_inicio.addEventListener("click", async () => {
             mensaje("inicio-aprobado", "Inicio de sesión realizado éxitosamente");
 
             setTimeout(() => {
-                window.location.href = "CienciaTest/html/carga.html"
+                window.location.href = "html/carga.html"
             }, 2000);
 
             break;
