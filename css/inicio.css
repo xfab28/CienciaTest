@@ -55,9 +55,10 @@ main h2 {
 }
 
 .materias h3 {
-    font-size: clamp(20px, 5vw, 30px);
+    font-size: clamp(20px, 5vw, 40px);
     color: #751FFF;
     width: 100%;
+    text-align: center;
     border-bottom: 1px solid #ADADAD;
 }
 
