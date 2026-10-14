@@ -12,6 +12,17 @@ h1, h2, h3, h4 {
 /*Contenido*/
 
 /*Sec1*/
+main {
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.informacion {
+    background-color: white;
+}
+
 #tem2, #tem3, #tem4, #tem5, #tem6, #tem7, #tem8, #tem9, #tem10, #tem11 {
     display: none;
 }

@@ -31,6 +31,10 @@ main {
     min-width: 0;
     align-items: center;
     animation: desvanecimiento .8s ease;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main h2 {
@@ -77,6 +81,7 @@ main h2 {
     border-radius: 20px;
     width: 400px;
     transition: .8s ease;
+    background-color: white;
 }
 
 .materia:hover {
