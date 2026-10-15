@@ -3,14 +3,13 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    padding: 0;
     margin: 0;
-    display: flex;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,233 +23,174 @@ h1, h2, h3 {
     }
 }
 
-/*Texto*/
-.texto {
+/*Contenido*/
+main {
     display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    align-items: center;
+    animation: desvanecimiento .8s ease;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main h2 {
+    font-size: clamp(24px, 6vw, 40px);
+    text-align: center;
+}
+
+.usuario {
+    color: #751FFF;
+}
+
+/*Materias*/
+.materias {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.materias h3 {
+    font-size: clamp(20px, 5vw, 40px);
+    color: #751FFF;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ADADAD;
+}
+
+/*Ciencias*/
+.ciencias {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 30vh;
+    max-width: 100%;
+}
+
+.materia {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
-    height: 100vh;
+    gap: 20px;
+    box-shadow: 0px 0px 20px #797979;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    transition: .8s ease;
+    background-color: white;
+}
+
+.materia:hover {
+    box-shadow: 0px 0px 10px #751FFF;
+}
+
+.materia h4 {
+    font-size: clamp(24px, 5vw, 35px);
+    margin: 20px;
+    text-align: center;
+}
+
+.materia img {
+    width: clamp(140px, 40vw, 200px);
+    height: clamp(140px, 40vw, 200px);
+}
+
+.btn-continuar {
+    border: none;
+    border-radius: 20px;
     background-color: #751FFF;
     color: white;
-    text-align: center;
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.texto h1 {
-    font-size: clamp(2.2rem, 7vw, 5rem);
-    animation: desvanecimiento .8s ease;
-    margin: 0;
-    max-width: 90%;
-}
-
-.texto p {
-    font-size: clamp(1.1rem, 4vw, 2rem);
-    animation: desvanecimiento .8s ease;
-    margin: 0;
-    max-width: 90%;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-}
-
-/*Inicio de Sesión*/
-.inicio-sesion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: auto;
-    min-height: 100vh;
-}
-
-.ocultar-inicio {
-    display: none;
-}
-
-.form-inicio {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 30px;
-    animation: desvanecimiento .8s ease;
-}
-
-.form-inicio h3, p, input {
-    margin: 0;
-}
-
-.form-inicio h3 {
-    font-size: clamp(28px, 6vw, 45px);
-}
-
-.form-inicio p {
     font-size: clamp(15px, 4vw, 20px);
-    color: #717171;
-    width: 90%;
-}
-
-.ir-registro {
-    color: black;
-    cursor: pointer;
-    transition: .5s ease;
-}
-
-.ir-registro:hover {
-    color: #751FFF;
-    cursor: pointer;
-}
-
-.input-data {
-    border: none;
-    background-color: #EBEBEB;
-    padding: clamp(12px, 4vw, 20px);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom: 2px solid #a8a8a8;
-    font-size: clamp(14px, 3.5vw, 15px);
-    outline: none;
-    transition: .5s ease;
-    font-family: 'Inter', sans-serif;
-    width: 100%;
-    min-width: 0;
-}
-
-.input-data:focus {
-    border-bottom: 2px solid #000000;
-}
-
-.boton {
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    padding: clamp(12px, 4vw, 20px);
     font-weight: bold;
-    font-size: clamp(15px, 5vw, 20px);
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
+    height: 45px;
+    width: clamp(110px, 12vh, 140px);
     transition: .8s ease;
-    width: 100%;
-    min-width: 0;
-}
-
-.boton:active {
-    transform: scale(0.8);
-}
-
-/*Registro*/
-.registro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: auto;
-    min-height: 100vh;
-}
-
-.ocultar-registro {
-    display: none;
-}
-
-.form-registro {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 30px;
-    animation: desvanecimiento .8s ease;
-}
-
-.form-registro h3, p, input {
-    margin: 0;
-}
-
-.form-registro h3 {
-    font-size: clamp(28px, 6vw, 45px);
-}
-
-.form-registro p {
-    font-size: clamp(15px, 4vw, 20px);
-    color: #717171;
-    width: 90%;
-}
-
-.ir-inicio {
-    color: black;
     cursor: pointer;
-    transition: .5s ease;
+    max-width: 90%;
 }
 
-.ir-inicio:hover {
-    color: #751FFF;
-    cursor: pointer;
+.btn-continuar:hover {
+    background-color: #500eb9;
 }
 
-/*Avisos*/
-.aviso-inicio {
-    text-align: center;
+.btn-continuar:active {
+    transform: scale(0.9);
 }
 
-.inicio-aprobado {
-    color: #2d9c01;
-}
-
-.inicio-desaprobado {
-    color: #9c0101;
-}
-
-.aviso-registro {
-    text-align: center;
-}
-
-.registro-aprobado {
-    color: #2d9c01;
-}
-
-.registro-desaprobado {
-    color: #9c0101;
+/*Footer*/
+footer {
+    margin-top: auto;
 }
 
 /*Responsive*/
-@media (max-width: 1024px) {
-    .form-inicio,
-    .form-registro {
-        width: 70%;
+@media (max-width: 1800px) {
+    .ciencias {
+        gap: clamp(2rem, 6vw, 4rem);
     }
 }
 
-@media (max-width: 820px) {
-    body {
+@media (max-width: 1280px) {
+    .materia {
+        width: clamp(230px, 26vw, 380px);
+    }
+}
+
+@media (max-width: 768px) {
+    .ciencias {
+        gap: 2rem;
+    }
+
+    .materia {
+        width: clamp(220px, 42vw, 260px);
+    }
+}
+
+@media (max-width: 480px) {
+    .ciencias {
         flex-direction: column;
+        gap: 2.5rem;
     }
 
-    .texto {
-        display: none;
-    }
-
-    .inicio-sesion,
-    .registro {
+    .materia {
         width: 100%;
-        height: auto;
-        padding: 40px 20px;
+        max-width: 360px;
     }
 
-    .form-inicio,
-    .form-registro {
-        width: 100%;
-        max-width: 480px;
+    .materias {
+        width: 95%;
     }
 
-    .input-data {
-        font-size: 16px;
+    .materia img {
+        width: clamp(120px, 40vw, 160px);
+        height: clamp(120px, 40vw, 160px);
     }
 
-    footer {
-        position: static;
-        margin-top: 40px;
+    .materia h4 {
+        font-size: clamp(20px, 7vw, 26px);
+    }
+
+    main h2 {
+        font-size: clamp(20px, 6vw, 26px);
+    }
+}
+
+/*Laptops (ej. 1536 x 864)*/
+@media (min-width: 1200px) and (max-width: 1600px) and (max-height: 900px) {
+    .materias {
+        width: 92%;
+    }
+
+    .ciencias {
+        gap: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    .materia {
+        gap: 14px;
+        padding: 16px;
     }
 }

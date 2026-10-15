@@ -3,50 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.jpeg" type="image/jpeg">
+    <link rel="icon" href="../img/logo.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="css/index.css">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/enlaces.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <title>Inicio</title>
 </head>
 <body>
-    <!--Cuadro de texto-->
-    <div class="texto">
-        <h1>¡Bienvenido de vuelta!</h1>
-        <p>Ingresa tus datos para acceder a nuestros servicios.</p>
-
-        <footer>
-            <p>© 2026 CienciaTest. All rights reserved</p>
-        </footer>
-    </div>
-
-    <!--Inicio de sesion-->
-    <div class="inicio-sesion ">
-        <div class="form-inicio">
-            <h3>Inicio de sesión</h3>
-            <p>¿No tienes una cuenta? <span class="ir-registro">Create una ahora</span>. Es completamente gratis y toma menos de una hora.</p>
-            <input type="email" name="email-inicio" class="correo-inicio input-data" placeholder="Correo electrónico">
-            <input type="password" name="contrasenia-inicio" class="contra-inicio input-data" placeholder="Contraseña">
-            <div class="aviso-inicio"></div>
-            <input type="button" name="boton-inicio" class="btn-inicio boton" value="Iniciar Sesión">
+    <!--Header-->
+    <header>
+        <img src="../img/logo.jpeg" alt="logo">
+        <h1>CienciaTest</h1>
+        <div class="cuenta">
+            <img src="../img/account.png" alt="cuenta">
         </div>
+    </header>
+
+    <!--Enlaces-->
+    <div class="enlaces">
+        <a href="html/fisica.html">Física</a>
+        <a href="html/quimica.html">Química</a>
+        <a href="html/biologia.html">Biología</a>
     </div>
 
-    <!--Registro-->
-    <div class="registro ocultar-registro">
-        <div class="form-registro">
-            <h3>Registro</h3>
-            <p>¿Ya tienes una cuenta? <span class="ir-inicio">Ingresa desde aquí</span>. Para que puedas seguir utilizando nuestros servicios.</p>
-            <input type="text" name="nombre" class="usuario input-data" placeholder="Nombre">
-            <input type="email" name="email-registro" class="correo-registro input-data" placeholder="Correo electrónico">
-            <input type="password" name="contrasenia-registro" class="contra-registro input-data" placeholder="Contraseña">
-            <input type="password" name="confirmar" class="contra-confirm input-data" placeholder="Confirmar contraseña">
-            <div class="aviso-registro"></div>
-            <input type="button" name="boton-registro" class="btn-registro boton" value="Registrar">
+    <!--Contenido-->
+    <!--Sidebar-->
+    <div class="contenido">
+        <aside class="sidebar">
+            <a href="inicio.html"><img src="../img/home.png" alt="casa"></a>
+            <div class="excepcion">
+                <img src="../img/setting.png" alt="tuerca">
+                <img src="../img/log-out.png" alt="salida" class="log-out">
+            </div>
+        </aside>
+
+        <!--Informacion-->
+        <main>
+            <h2>¡Bienvenido de vuelta, <span class="usuario">usuario</span>!</h2>
+
+            <div class="materias">
+                <h3>Materias</h3>
+
+                <div class="ciencias">
+                    <div class="fisica materia">
+                        <h4>Física</h4>
+                        <img src="../img/atomic.png" alt="fisica">
+                        <input type="button" name="btn1" class="btn-fisica btn-continuar" value="Comenzar">
+                    </div>
+                    <div class="quimica materia">
+                        <h4>Química</h4>
+                        <img src="../img/flask.png" alt="frasco">
+                        <input type="button" name="btn1" class="btn-quimica btn-continuar" value="Comenzar">
+                    </div>
+                    <div class="biologia materia">
+                        <h4>Biología</h4>
+                        <img src="../img/dna-structure.png" alt="adn">
+                        <input type="button" name="btn1" class="btn-biologia btn-continuar" value="Comenzar">
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <footer>
+                <p>© 2026 CienciaTest. All rights reserved</p>
+            </footer>
+
+        </main>
+    </div>
+
+<!--     <div class="fondo-gris esconder">
+        <div class="cerrar-sesion">
+            <h3>¿Desea cerrar sesión?</h3>
+            <div class="btns-sesion">
+                <input type="button" name="aceptar" class="aceptar" value="Aceptar">
+                <input type="button" name="rechazar" class="cancelar" value="Cancelar">
+            </div>
         </div>
-    </div>
+    </div> -->
 
-    <script src="js/index/index.js"></script>
-    <script type="module" src="js/index/registro.js"></script>
-    <script type="module" src="js/index/inicio-sesion.js"></script>
+    <script src="js/inicio.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </body>

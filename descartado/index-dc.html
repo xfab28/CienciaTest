@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Cuadro de texto-->
+    <div class="texto">
+        <h1>¡Bienvenido de vuelta!</h1>
+        <p>Ingresa tus datos para acceder a nuestros servicios.</p>
+
+        <footer>
+            <p>© 2026 CienciaTest. All rights reserved</p>
+        </footer>
+    </div>
+
+    <!--Inicio de sesion-->
+    <div class="inicio-sesion ">
+        <div class="form-inicio">
+            <h3>Inicio de sesión</h3>
+            <p>¿No tienes una cuenta? <span class="ir-registro">Create una ahora</span>. Es completamente gratis y toma menos de una hora.</p>
+            <input type="email" name="email-inicio" class="correo-inicio input-data" placeholder="Correo electrónico">
+            <input type="password" name="contrasenia-inicio" class="contra-inicio input-data" placeholder="Contraseña">
+            <div class="aviso-inicio"></div>
+            <input type="button" name="boton-inicio" class="btn-inicio boton" value="Iniciar Sesión">
+        </div>
+    </div>
+
+    <!--Registro-->
+    <div class="registro ocultar-registro">
+        <div class="form-registro">
+            <h3>Registro</h3>
+            <p>¿Ya tienes una cuenta? <span class="ir-inicio">Ingresa desde aquí</span>. Para que puedas seguir utilizando nuestros servicios.</p>
+            <input type="text" name="nombre" class="usuario input-data" placeholder="Nombre">
+            <input type="email" name="email-registro" class="correo-registro input-data" placeholder="Correo electrónico">
+            <input type="password" name="contrasenia-registro" class="contra-registro input-data" placeholder="Contraseña">
+            <input type="password" name="confirmar" class="contra-confirm input-data" placeholder="Confirmar contraseña">
+            <div class="aviso-registro"></div>
+            <input type="button" name="boton-registro" class="btn-registro boton" value="Registrar">
+        </div>
+    </div>
+
+    <script src="js/index/index.js"></script>
+    <script type="module" src="js/index/registro.js"></script>
+    <script type="module" src="js/index/inicio-sesion.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</body>
+</html>

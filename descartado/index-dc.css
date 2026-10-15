@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Animaciones*/
+@keyframes desvanecimiento {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Texto*/
+.texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    background-color: #751FFF;
+    color: white;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.texto h1 {
+    font-size: clamp(2.2rem, 7vw, 5rem);
+    animation: desvanecimiento .8s ease;
+    margin: 0;
+    max-width: 90%;
+}
+
+.texto p {
+    font-size: clamp(1.1rem, 4vw, 2rem);
+    animation: desvanecimiento .8s ease;
+    margin: 0;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/*Inicio de Sesión*/
+.inicio-sesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.ocultar-inicio {
+    display: none;
+}
+
+.form-inicio {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+    animation: desvanecimiento .8s ease;
+}
+
+.form-inicio h3, p, input {
+    margin: 0;
+}
+
+.form-inicio h3 {
+    font-size: clamp(28px, 6vw, 45px);
+}
+
+.form-inicio p {
+    font-size: clamp(15px, 4vw, 20px);
+    color: #717171;
+    width: 90%;
+}
+
+.ir-registro {
+    color: black;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.ir-registro:hover {
+    color: #751FFF;
+    cursor: pointer;
+}
+
+.input-data {
+    border: none;
+    background-color: #EBEBEB;
+    padding: clamp(12px, 4vw, 20px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #a8a8a8;
+    font-size: clamp(14px, 3.5vw, 15px);
+    outline: none;
+    transition: .5s ease;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    min-width: 0;
+}
+
+.input-data:focus {
+    border-bottom: 2px solid #000000;
+}
+
+.boton {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: clamp(12px, 4vw, 20px);
+    font-weight: bold;
+    font-size: clamp(15px, 5vw, 20px);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: .8s ease;
+    width: 100%;
+    min-width: 0;
+}
+
+.boton:active {
+    transform: scale(0.8);
+}
+
+/*Registro*/
+.registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.ocultar-registro {
+    display: none;
+}
+
+.form-registro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 30px;
+    animation: desvanecimiento .8s ease;
+}
+
+.form-registro h3, p, input {
+    margin: 0;
+}
+
+.form-registro h3 {
+    font-size: clamp(28px, 6vw, 45px);
+}
+
+.form-registro p {
+    font-size: clamp(15px, 4vw, 20px);
+    color: #717171;
+    width: 90%;
+}
+
+.ir-inicio {
+    color: black;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.ir-inicio:hover {
+    color: #751FFF;
+    cursor: pointer;
+}
+
+/*Avisos*/
+.aviso-inicio {
+    text-align: center;
+}
+
+.inicio-aprobado {
+    color: #2d9c01;
+}
+
+.inicio-desaprobado {
+    color: #9c0101;
+}
+
+.aviso-registro {
+    text-align: center;
+}
+
+.registro-aprobado {
+    color: #2d9c01;
+}
+
+.registro-desaprobado {
+    color: #9c0101;
+}
+
+/*Responsive*/
+@media (max-width: 1024px) {
+    .form-inicio,
+    .form-registro {
+        width: 70%;
+    }
+}
+
+@media (max-width: 820px) {
+    body {
+        flex-direction: column;
+    }
+
+    .texto {
+        display: none;
+    }
+
+    .inicio-sesion,
+    .registro {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .form-inicio,
+    .form-registro {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .input-data {
+        font-size: 16px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 40px;
+    }
+}
