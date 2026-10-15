@@ -5,13 +5,13 @@ const btn_biologia = document.querySelector(".btn-biologia");
 
 //Eventos
 btn_fisica.addEventListener("click", () => {
-    window.location.href = "../html/fisica.html";
+    window.location.href = "html/fisica.html";
 });
 
 btn_quimica.addEventListener("click", () => {
-    window.location.href = "../html/quimica.html";
+    window.location.href = "html/quimica.html";
 });
 
 btn_biologia.addEventListener("click", () => {
-    window.location.href = "../html/biologia.html";
+    window.location.href = "html/biologia.html";
 });
